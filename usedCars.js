@@ -153,6 +153,7 @@ const usedCars = [
     price: 27000,
     color: "Black",
     gasMileage: "23 mpg city, 34 mpg highway",
+    img: "./images/BMWM5.webp",
   },
 ];
 

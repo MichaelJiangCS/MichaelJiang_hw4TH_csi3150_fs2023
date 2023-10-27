@@ -4,14 +4,14 @@ const carList = document.querySelector(".carList");
 
 //const minYearInput = document.getElementById("minYearInput");
 //const maxYearInput = document.getElementById("maxYearInput");
-const carMake = document.getElementById("carBrand");
-const carMileage = document.getElementById("mileageInput");
+//const carMake = document.getElementById("carBrand");
+//const carMileage = document.getElementById("mileageInput");
 //const carPrice = document.getElementById("priceInput");
 
 const filterButton = document.querySelector(".filterButton");
 
 function dataInput (allCars) {
-    carList.innerHTML = ``;
+    carList.innerHTML = "";
 
     allCars.forEach(car => {
         const carDiv = document.createElement("div"); //create a div tag for each car data, element = tag name
@@ -26,7 +26,7 @@ function dataInput (allCars) {
         price: ${car.price},
         color: ${car.color},
         gasMileage: ${car.gasMileage}.
-    
+        <img src="${car.img}" width=80px>
         </p>`;
 
         carList.append(carDiv);
@@ -49,7 +49,7 @@ function filter(cars) {
     const maxYear = parseInt(document.getElementById("maxYearInput").value) || Infinity;
     //const selectedMakeOption = carMake.options[userSelect.selectedIndex];
     //const selectedMake = selectedMakeOption.textContent;
-    const make = carMake.value;
+    const carBrand = document.getElementById("carBrand").value;
     const maxMileage = parseInt(document.getElementById("mileageInput").value) || Infinity;
     const maxPrice = parseInt(document.getElementById("priceInput").value) || Infinity;
     const selectedColor = Array.from(document.querySelectorAll(".color-checkbox:checked")).map(
@@ -59,7 +59,7 @@ function filter(cars) {
     const filteredCars = cars.filter(car => {
         return car.year >= minYear
         && car.year <= maxYear
-        && (car.make === make || make === "All") 
+        && (car.make === carBrand || carBrand === "All") 
         && car.mileage <= maxMileage
         && car.price <= maxPrice
         && (selectedColor.includes(car.color) || selectedColor.length === 0);
