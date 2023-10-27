@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1{
+    font-size: 36px;
+    margin: 30px;
+}
+p{
+    margin-bottom: 10px;
+}
+input {
+    background-color: rgb(255, 200, 99);
+    color: rgb(55, 55, 255);
+    border-radius: 5px; 
+    height: 26px;
+}
+select{
+    background-color: rgb(255, 200, 99);
+    color: rgb(55, 55, 255);
+    border-radius: 5px;
+    height: 26px;
+}
+label{
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+
+body{
+    color: rgb(251, 229, 105);
+    font-family: Arial, sans-serif;
+    font-size: large;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./images/x6.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    text-align: center;
+
+}
+.maxYear{
+    margin-left: 20px;
+}
+.filterContainer *{
+    margin-bottom: 10px;
+}
+
+.filterButton{
+    border-radius: 5px;
+    border-color: aliceblue;
+    color: gold;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(255, 111, 0);
+    text-align: center ;
+}
+.filterButton:hover{
+    background-color: orange;
+}
+
+.colorSection .color-checkbox{
+    cursor: pointer;
+}
