@@ -58,6 +58,7 @@ body{
     height: 30px;
     background-color: rgb(255, 111, 0);
     text-align: center ;
+    cursor: pointer;
 }
 .filterButton:hover{
     background-color: orange;
@@ -77,14 +78,14 @@ body{
 
 .moreInfoButton{
     border: none;
-  outline: 0;
-  padding: 12px;
-  color: gold;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
+    outline: 0;
+    padding: 12px;
+    color: gold;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
 }
 
 .moreInfoButton:hover{

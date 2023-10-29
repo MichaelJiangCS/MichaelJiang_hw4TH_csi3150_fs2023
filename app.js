@@ -18,7 +18,6 @@ function dataInput (allCars) {
         carDiv.classList.add("carData"); // create class name for each carDiv
         carDiv.innerHTML = 
         `<p>
-
         <img src="${car.img}" style="width:100%">
         year: ${car.year},
         make: ${car.make},
