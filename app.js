@@ -19,6 +19,7 @@ function dataInput (allCars) {
         carDiv.innerHTML = 
         `<p>
 
+        <img src="${car.img}" style="width:100%">
         year: ${car.year},
         make: ${car.make},
         model: ${car.model},
@@ -26,7 +27,7 @@ function dataInput (allCars) {
         price: ${car.price},
         color: ${car.color},
         gasMileage: ${car.gasMileage}.
-        <img src="${car.img}" width=80px>
+        <p><button class = "moreInfoButton" >More Info</button></p>
         </p>`;
 
         carList.append(carDiv);
@@ -40,6 +41,7 @@ dataInput(usedCars);
 filterButton.addEventListener("click", () => {
     const filteredCars = filter(usedCars);
     // TODO: need validation on initial filter click
+    // or not
     dataInput(filteredCars);
 });
 
